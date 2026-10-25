@@ -1,0 +1,76 @@
+/* General page styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f3ff;
+    color: #272343;
+    line-height: 1.7;
+}
+
+/* Main heading */
+h1 {
+    background-color: #5b3cc4;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+    margin: 0;
+    font-size: 36px;
+}
+
+h2 {
+    color: #5b3cc4;
+    margin-top: 30px;
+        max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Profile picture */
+img {
+    display: block;
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 30px auto;
+    border: 5px solid white;
+}
+
+/* Content sections */
+p, ul {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul {
+    background-color: white;
+    padding: 20px 20px 20px 45px;
+    border-radius: 12px;
+}
+
+/* Links */
+a {
+    color: #5b3cc4;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Smaller screens */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 28px;
+    }
+
+       h2, p, ul {
+        margin-left: 18px;
+        margin-right: 18px;
+    }
+}
