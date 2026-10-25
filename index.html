@@ -1,33 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>About</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lawrencia Ashong, Information Technology student at the University of Ghana.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Lawrencia Ashong | About</title>
 </head>
 <body>
-    <h1>About</h1>
-    <img src="images/photo2.jpg" />
-    <p>My name is Lawrencia Ashong.I am a student and i study Information Technology. I am very much interested in technology and i enjoy learning new thimgs.
-</p>
-    <h2>My Hobbies</h2>
-    <ul>
-        <li>Watching movies</li>
-        <li>Listening to music</li>
-        <li>Watching anime</li>
-    </ul>
-    <h2>My skills</h2>
-    <ul>
-        <li>Problem solving</li>
-        <li>Persistence</li>
-        <li>Communication</li>
-    </ul>
-    <h2>My Favourite Website</h2>
-    <ul>
-        <li><a href="https://www.youtube.com">Youtube</a></li>
-        <li><a href="https://web.whatsapp.com">WhatsApp</a></li>
-        <li><a href="https://chatgpt.com">ChatGPT</a></li>
-    </ul>
 
-    
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="topbar">
+    <a class="brand" href="#top">Lawrencia Ashong</a>
+    <nav aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#interests">Interests</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="hero-text">
+        <p class="hello">Hello, I am</p>
+        <h1>Lawrencia <span>Ashong</span></h1>
+        <p class="lead">
+          I am an Information Technology student at the University of Ghana.
+          I like building things that work well and look good.
+        </p>
+        <div class="actions">
+          <a class="btn primary" href="#projects">See my projects</a>
+          <a class="btn" href="https://github.com/LawrenciaAshong" target="_blank" rel="noopener">My GitHub</a>
+        </div>
+      </div>
+      <div class="portrait">
+        <img src="images/photo2.jpg" alt="Portrait of Lawrencia Ashong">
+      </div>
+    </section>
+
+    <!-- QUICK FACTS -->
+    <section class="facts" aria-label="Quick facts">
+      <div><strong>University of Ghana</strong><span>Where I study</span></div>
+      <div><strong>Level 200</strong><span>BSc Information Technology</span></div>
+      <div><strong>Web and design</strong><span>HTML, CSS and Figma</span></div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="block">
+      <h2>About me</h2>
+      <div class="prose">
+        <p>
+          My name is Lawrencia Ashong. I am a student and I study Information Technology
+          at the University of Ghana, where I am in Level 200 of the BSc programme.
+        </p>
+        <p>
+          I am interested in technology and design. I enjoy the moment when an idea
+          becomes something you can open, click and use. I am learning to build websites,
+          and I work on team projects where I practise planning, communication and
+          working with a real client.
+        </p>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="block">
+      <h2>Education</h2>
+      <ol class="timeline">
+        <li>
+          <h3>BSc Information Technology</h3>
+          <p class="meta">University of Ghana, Level 200</p>
+          <p>Studying how software, data and networks are planned, built and kept running. Current work includes a team project for a real restaurant client.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="block">
+      <h2>Skills</h2>
+      <div class="skill-grid">
+        <div class="skill">
+          <h3>Technical</h3>
+          <ul class="tags">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Figma</li>
+            <li>Git and GitHub</li>
+          </ul>
+        </div>
+        <div class="skill">
+          <h3>Personal</h3>
+          <ul class="tags">
+            <li>Problem solving</li>
+            <li>Persistence</li>
+            <li>Communication</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="block">
+      <h2>Projects</h2>
+      <div class="project-list">
+
+        <article class="project">
+          <h3>Restaurant Management System</h3>
+          <p class="meta">Group 14 team project</p>
+          <p>
+            A web system for Sarah's Tasty Foods. Customers order online, and staff see
+            those orders on the till and kitchen screens. I was the client manager, so I
+            spoke with the restaurant owner to find out what she needed and turned it into requirements.
+          </p>
+          <ul class="tags small">
+            <li>Next.js</li>
+            <li>TypeScript</li>
+            <li>Supabase</li>
+          </ul>
+        </article>
+
+        <article class="project">
+          <h3>This personal website</h3>
+          <p class="meta">Built with HTML and CSS, hosted on GitHub Pages</p>
+          <p>
+            My first website. It started as one plain page and grew into a full profile,
+            and I update it as I learn more.
+          </p>
+          <a class="link" href="https://github.com/LawrenciaAshong/my-website" target="_blank" rel="noopener">View the code on GitHub</a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- INTERESTS -->
+    <section id="interests" class="block">
+      <h2>Interests</h2>
+      <div class="skill-grid">
+        <div class="skill">
+          <h3>My hobbies</h3>
+          <ul class="tags">
+            <li>Watching movies</li>
+            <li>Listening to music</li>
+            <li>Watching anime</li>
+          </ul>
+        </div>
+        <div class="skill">
+          <h3>My favourite websites</h3>
+          <ul class="plain">
+            <li><a href="https://www.youtube.com" target="_blank" rel="noopener">YouTube</a></li>
+            <li><a href="https://web.whatsapp.com" target="_blank" rel="noopener">WhatsApp Web</a></li>
+            <li><a href="https://chatgpt.com" target="_blank" rel="noopener">ChatGPT</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+      <h2>Let us connect</h2>
+      <p>I am happy to hear about projects, teamwork and internships. The best place to find my work is GitHub.</p>
+      <div class="actions">
+        <a class="btn light" href="https://github.com/LawrenciaAshong" target="_blank" rel="noopener">github.com/LawrenciaAshong</a>
+        <!-- Add your own email here if you want it public:
+        <a class="btn light" href="mailto:YOUR-EMAIL@example.com">YOUR-EMAIL@example.com</a> -->
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Lawrencia Ashong. Made with HTML and CSS.</p>
+    <a href="#top">Back to top</a>
+  </footer>
+
+</body>
+</html>
